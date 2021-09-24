@@ -53,10 +53,10 @@ public class Home extends Pojo{
 	{
 		driver.navigate().to("https://kite.zerodha.com/");
 		Login =new Loginpage(driver);
-		Login.SendUserid("JN9191");
-		Login.SendPassword("Shubhu@143");
+		Login.SendUserid("");
+		Login.SendPassword("");
 		Login.ClickLogin(); 
-		Login.EnterPin("898354");
+		Login.EnterPin("");
 		Login.ClickContinue();
 		Thread.sleep(3000);
 		Homepage home=new Homepage(driver);
@@ -76,44 +76,4 @@ public class Home extends Pojo{
 	public void closebrowser(){
 		driver.close();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
