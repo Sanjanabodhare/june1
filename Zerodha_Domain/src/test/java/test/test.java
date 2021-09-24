@@ -47,14 +47,14 @@ public class test extends Pojo{
 	public void VerifyLogin() throws InterruptedException {
 		driver.navigate().to("https://kite.zerodha.com/");
 		Login =new Loginpage(driver);
-		Login.SendUserid("JN9191");
-		Login.SendPassword("Shubhu@143");
+		Login.SendUserid("");
+		Login.SendPassword("");
 		boolean b=Login.LoginisEnable();
 		Assert.assertTrue(b);
 		Login.ClickLogin(); 
 		String a=Login.LogingTitel();
 		Assert.assertEquals(a, "Kite - Zerodha's fast and elegant flagship trading platform");
-		Login.EnterPin("898354");
+		Login.EnterPin("");
 		Login.ClickContinue();
 	}
 	
