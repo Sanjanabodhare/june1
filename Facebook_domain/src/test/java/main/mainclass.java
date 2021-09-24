@@ -31,8 +31,8 @@ public class mainclass {
 	public void login() {
 		driver.get("https://en-gb.facebook.com/");
 		 login =new loginpage(driver);
-		 login.sendname("shubhampatil4584@gmail.com");
-		 login.password("Shree007");
+		 login.sendname("@gmail.com");
+		 login.password("7");
 		 login.login();
 	}
 	
